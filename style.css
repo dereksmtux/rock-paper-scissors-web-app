@@ -1,0 +1,14 @@
+body {
+	background-color: #999999;
+}
+p {
+	font-size: 24px;
+}
+button {
+	font-size: 30px;
+}
+#buttons {
+	width: 450px;
+	margin-right: auto;
+	margin-left: auto;
+}
