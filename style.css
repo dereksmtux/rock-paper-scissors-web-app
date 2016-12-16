@@ -12,3 +12,11 @@ button {
 	margin-right: auto;
 	margin-left: auto;
 }
+#trophy {
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#result {
+	text-align: center;
+}
