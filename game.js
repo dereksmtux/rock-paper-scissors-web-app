@@ -9,7 +9,7 @@ function yourMove (){
   
 }
 
-//compares the two results
+//compares the two results and also genreates an answer for the computer
 function compare (choice1,choice2) {
     computerChoice = Math.random();
 
@@ -22,9 +22,6 @@ function compare (choice1,choice2) {
     else {
         computerChoice = "scissors";
     }
-
-
-
 
 
     if (choice1 === choice2) {
@@ -63,6 +60,4 @@ function compare (choice1,choice2) {
     }
     document.getElementById("prize").style.display = "inline";
     document.getElementById("result").innerHTML = winner;
-
-
 };
