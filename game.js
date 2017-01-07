@@ -3,8 +3,10 @@ var computerChoice = 0;
 var winner = " ";
 
 //function for the your move button
-function yourMove (){
-     userChoice = prompt("Do you choose rock, paper or scissors?");
+function yourMove (x){
+     userChoice = x;
+
+     compare(userChoice, computerChoice);
      
   
 }
