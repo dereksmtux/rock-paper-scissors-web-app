@@ -26,3 +26,10 @@ button {
 #counterLoose {
 	text-align: center;
 }
+#statsTable {
+	
+}
+td {
+	padding: 10px;
+	font-size: 22px;
+}
