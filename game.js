@@ -2,9 +2,9 @@ var userChoice = " ";
 var computerChoice = 0;
 var winner = " ";
 var winCounter = 0;
-var LooseCounter = 0;
+var LoseCounter = 0;
 var CounterPhraseWin = "";
-var CounterPhraseLoose = "";
+var CounterPhraseLose = "";
 
 //function for the your move button
 function yourMove (x){
@@ -45,8 +45,8 @@ function compare (choice1,choice2) {
         else {
          winner = "computer chose paper you lose.";
          document.getElementById('prize').src= "lose.png" 
-         LooseCounter ++;
-         CounterPhraseLoose = "Games Lost: " + LooseCounter;  
+         LoseCounter ++;
+         CounterPhraseLose = "Games Lost: " + LoseCounter;  
         }
     }
     else if (choice1 === "paper"){
@@ -59,16 +59,16 @@ function compare (choice1,choice2) {
         else {
             winner = "computer chose scissors you lose."; 
             document.getElementById('prize').src= "lose.png" 
-            LooseCounter ++;
-            CounterPhraseLoose = "Games Lost: " + LooseCounter;   
+            LoseCounter ++;
+            CounterPhraseLose = "Games Lost: " + LoseCounter;   
         }
     }
     else if (choice1 === "scissors"){
         if (choice2 === "rock") {
             winner = "computer chose rock you lose"; 
             document.getElementById('prize').src= "lose.png"  
-            LooseCounter ++;
-            CounterPhraseLoose = "Games Lost: " + LooseCounter;  
+            LoseCounter ++;
+            CounterPhraseLose = "Games Lost: " + LoseCounter;  
         }
         else {
             winner = "computer chose paper you win."; 
@@ -81,6 +81,6 @@ function compare (choice1,choice2) {
     document.getElementById("result").innerHTML = winner;
     //todo
     document.getElementById("counterWin").innerHTML = CounterPhraseWin;
-    document.getElementById("counterLoose").innerHTML = CounterPhraseLoose;
+    document.getElementById("counterLose").innerHTML = CounterPhraseLose;
 };
 
